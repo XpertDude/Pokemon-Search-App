@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #1c1c33;
+}
+
+:root {
+    --main-color: #7f20ab;
+    --button-color: #7f20ab;
+}
+
+h1 {
+    text-align: center;
+    color: #f5f6f7;
+}
+
+.maine-face {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.basic-info {
+    margin: 10px;
+    background-color: #f0f1f7;
+}
+
+.pokemon-info-table {
+    font-size: small;
+    background-color: #f5f6f7;
+    border-radius: 3%;
+    width: 30%;
+    height: auto;
+    padding: 10px;
+    margin: 20px;
+    text-align: center;
+    box-shadow: 8px 10px 0 0 gray;
+}
+
+.container-search {
+    display: grid;
+    grid-template-columns: auto 80px;
+    gap: 5px;
+}
+
+.container-search input {
+    width: auto;
+    height: ;
+    padding: 10px;
+}
+
+.pokemon-info-table button {
+    background-color: var(--button-color);
+    color: #f5f6f7;
+    border: none;
+    padding: 8px;
+    border-radius: 10%;
+    cursor: pointer;
+}
+
+.avatar {
+    object-fit: fill;
+    display: flex;
+    justify-content: center;
+}
+
+.avatar img {
+    width: 50%;
+    height: 40%;
+}
+
+.pokemon-name-id,
+.pokemon-weight-height {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    font-size: large;
+    padding: 10px;
+}
+
+.pokemon-weight-height {
+    font-size: 15px;
+}
+
+.avatar {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.type {
+    padding: 8px;
+    border-radius: 9%;
+}
+
+.pokemon-types {
+    display: grid;
+    justify-content: flex-start;
+    padding: 10px;
+    font-size: small;
+    grid-template-columns: auto;
+}
+
+.pokemon-specials {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: repeat(7, 40px);
+    gap: 10px;
+}
+
+.pokemon-specials span,
+.pokemon-specials div {
+    background-color: var(--button-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    color: #f5f6f7;
+}
+
+@media screen and (max-width: 931px) {
+    .container-search {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+}

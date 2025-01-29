@@ -1,0 +1,44 @@
+<html lang="en">
+
+        <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <link rel="stylesheet" href="styles.css" />
+            <title>Pokémon Search App</title>
+        </head>
+
+        <body>
+            <h1>Pokémon Search App</h1>
+            <main class="maine-face">
+                <section class="pokemon-info-table">
+                    <h2>Search for Pokémon Name or ID:</h2>
+                    <div class="container-search"><input type="text" id="search-input" required><button id="search-button">Search</button>
+                    </div>
+                    <div class="basic-info">
+                        <div class="pokemon-name-id"><span id="pokemon-name"></span><span id="pokemon-id"></span></div>
+                        <div class="pokemon-weight-height"><span id="weight"></span><span id="height"></span></div>
+                        <div class="avatar"><img id="sprite" alt=""></div>
+                        <div class="pokemon-types"><span id="types"></span></div>
+                    </div>
+                    <div class="pokemon-specials">
+                        <div>Base</div>
+                        <div>Stats</div>
+                        <span>HP:</span>
+                        <div id="hp"></div>
+                        <span>Attack:</span>
+                        <div id="attack"></div>
+                        <span>Defense:</span>
+                        <div id="defense"></div>
+                        <span>SP.Attack:</span>
+                        <div id="special-attack"></div>
+                        <span>SP.Defense:</span>
+                        <div id="special-defense"></div>
+                        <span>Speed:</span>
+                        <div id="speed"></div>
+                    </div>
+                </section>
+            </main>
+            <script src="main.js"></script>
+        </body>
+
+    </html>
