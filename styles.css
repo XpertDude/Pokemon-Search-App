@@ -123,6 +123,9 @@ h1 {
 }
 
 @media screen and (max-width: 931px) {
+    .pokemon-info-table{
+        width: 50%;
+    }
     .container-search {
         display: flex;
         flex-direction: column;
